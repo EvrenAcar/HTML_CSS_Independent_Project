@@ -1,0 +1,108 @@
+/* Common styles for h1 and h2 elements */
+h1.Projects,
+h2.Projects {
+  font-size: 1.5em;
+}
+
+h1.Projects {
+  background-color: rgba(22, 24, 28, 1.0);
+  line-height: 2em;
+}
+
+h2.Projects {
+  margin-bottom: 0.25em;
+}
+
+/* Main and aside sections */
+section#main,
+body aside {
+  background-color: rgba(56, 56, 56, 1.0);
+  margin-top: 10px;
+  color: rgba(241, 241, 241, 1.0);
+}
+
+/* Styles for the aside section */
+.locked-aside {
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+  width: 250px;
+}
+
+body aside h1.Projects {
+  line-height: 2em;
+  text-align: center;
+}
+
+body aside ul,
+section#topics article ul {
+  color: rgba(241, 241, 241, 1.0);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+body aside ul p,
+section#topics article ul p {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+body aside li {
+  line-height: 1.8em;
+  margin-top: 10px;
+}
+
+/* Flex layout for body and sections */
+body,
+section#main,
+section#topics {
+  display: flex;
+  flex-basis: 200px;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* Styles for the main section */
+section#main {
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+  flex-basis: 200px;
+  flex-grow: 3;
+  flex-shrink: 1;
+  margin-left: 28px;
+  max-width: 80%;
+  text-align: center;
+}
+
+/* Styles for the topics section */
+section#topics article {
+  background-color: rgba(34, 34, 34, 1.0);
+  border: 5px solid rgba(241, 241, 241, 1.0);
+  border-radius: 15px;
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 10px;
+}
+
+section#topics article p {
+  font-size: 15px;
+  padding: 15px;
+}
+
+section#topics h1 {
+  background-color: transparent;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* Styles for specific articles */
+article#overview p {
+  font-size: 1.25em;
+  margin: 10px;
+  text-align: left;
+}
+
+img.Project {
+  max-width: 100%;
+}

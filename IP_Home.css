@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/* Common styles for h1 elements inside and outside articles */
+body h1.About,
+body article h1.About,
+body article h1.Member {
+  font-size: 1.5em;
+}
+
+body h1.About {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+body article h1.About,
+body article h1.Member {
+  background-color: rgba(22, 24, 28, 1.0);
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+  color: rgba(241, 241, 241, 1.0);
+  display: block;
+  flex-basis: 200px;
+  flex-grow: 3;
+  flex-shrink: 1;
+  font-size: 1.75em;
+  text-align: center;
+  width: 100%;
+}
+
+body article h1.Member,
+body article h1.Highlight {
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+/* Common styles for images inside articles */
+article img.About,
+article img.Member,
+article img.Highlight {
+  background-color: rgba(56, 56, 56, 1.0);
+  border: 5px solid rgba(241, 241, 241, 1.0);
+  border-radius: 15px;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+article img.About {
+  float: right;
+  min-width: 20%;
+  max-width: 25%;
+  margin-left: 40px;
+}
+
+article img.Member {
+  float: left;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-right: 25px;
+  min-width: 10%;
+  max-width: 12%;
+}
+
+article img.Highlight {
+  float: left;
+  width: 40%;
+  margin-right: 40px;
+}
+
+/* Common styles for paragraphs with class 'About' */
+p.About,
+p.Member,
+p.Highlight {
+  background-color: rgba(56, 56, 56, 1.0);
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+  color: rgba(241, 241, 241, 1.0);
+  font-size: 1.45em;
+  width: 100%;
+}
+
+p.About {
+  padding: 20px;
+}
+
+p.Member {
+  padding: 25px;
+}
+
+/* Common styles for highlighted images and text in articles */
+article h1.Highlight {
+  background-color: rgba(22, 24, 28, 1.0);
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+  color: rgba(241, 241, 241, 1.0);
+  display: block;
+  float: right;
+  font-size: 1.5em;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+article p.Highlight {
+  background-color: rgba(56, 56, 56, 1.0);
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+  color: rgba(241, 241, 241, 1.0);
+  float: right;
+  font-size: 1.35em;
+  padding: 10px;
+  width: 100%;
+}
+footer {
+  margin-top: 530px;
+}
+
+/*======================Tablet @ 1080px======================*/
+@media only screen and (max-width: 1080px) {
+  body {
+    max-width: 1080px;
+    min-width: 721px;
+  }
+
+  body h1.About {
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  body article h1.About {
+    flex-basis: 100px;
+    flex-grow: 2;
+    font-size: 1em;
+  }
+
+  article img.About {
+    margin-left: 20px;
+    max-width: 25%;
+    min-width: 20%;
+  }
+
+  p.About {
+    font-size: 1.20em;
+  }
+
+  article img.Highlight {
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  article h1.Highlight {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  article p.Highlight {
+    font-size: 1em;
+    padding: 5px;
+  }
+}
+
+/*======================Phone @ 540px======================*/
+@media only screen and (max-width: 540px) {
+  body {
+    max-width: 540px;
+    min-width: 1px;
+  }
+
+  body h1.About {
+    margin-top: 3px;
+    padding: 5px;
+  }
+
+  body article h1.About {
+    flex-basis: 100px;
+    flex-grow: 2;
+    font-size: 1em;
+  }
+
+  article img.About {
+    margin-left: 20px;
+    max-width: 26%;
+    min-width: 20%;
+  }
+
+  p.About {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  article img.Highlight {
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  article h1.Highlight {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  article p.Highlight {
+    font-size: 1em;
+    padding: 5px;
+  }
+}

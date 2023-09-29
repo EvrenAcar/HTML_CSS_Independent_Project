@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* Shared Styles */
+body, img, nav.Banner li, nav.Banner a, ul.Banner > li {
+   margin: auto;
+   font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+   margin: auto;
+   min-width: 1440px;
+   max-width: 1440px;
+   background-image: url('images/IP_Background.png');
+   background-repeat: repeat;
+}
+
+img.Banner {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+nav.Banner {
+   background-color: rgba(34, 34, 34, 1.0);
+   min-height: 4em;
+   box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+nav.Banner li {
+   color: rgba(0, 0, 0, 1.0);
+   display: block;
+   line-height: 4em;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+nav.Banner a {
+   display: block;
+   font-size: 3em;
+   color: rgba(255, 255, 255, 1.0);
+   text-decoration: none;
+}
+
+nav.Banner a:hover, nav.Banner a:active {
+   background-color: rgba(56, 56, 56, 1.0);
+}
+
+ul.Banner {
+   display: block;
+}
+
+ul.Banner > li {
+   float: left;
+   position: relative;
+   width: 25%;
+}
+
+header img {
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+header img.banner {
+   box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Hyper Link Coloring*/
+a:link {
+  color: #95ACC7;
+  text-decoration: none;
+}
+a:visited {
+  color: #95ACC7;
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(241, 241, 241, 1.0);
+  text-decoration: none;
+}
+a:active {
+  color: rgba(56, 56, 56, 1.0);
+  text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: rgba(22, 24, 28, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+  display: block;
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5), -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/*======================Tablet @ 1080px======================*/
+@media only screen and (max-width: 1080px) {
+
+  body, img.Banner {
+     min-width: 801px;
+     max-width: 1080px;
+  }
+
+  nav.Banner {
+     min-height: 3em;
+  }
+
+  nav.Banner li {
+     line-height: 3em;
+  }
+
+  nav.Banner a {
+     font-size: 2em;
+  }
+}
+
+/*======================Mobile @ 800px======================*/
+@media only screen and (max-width: 800px) {
+
+  body, img.Banner {
+     min-width: 1px;
+     max-width: 800px;
+  }
+
+  nav.Banner {
+     min-height: 2em;
+  }
+
+  nav.Banner li {
+     line-height: 2em;
+  }
+
+  nav.Banner a {
+     font-size: 1em;
+  }
+}
